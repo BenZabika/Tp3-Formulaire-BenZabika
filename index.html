@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr-CA">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Commander une brochure gratuite</title>
+        <script src="./app.js"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <!-- Votre code HTML commence ici -->
+         <form>
+         <fieldset>
+            <legend>Format de la brochure</legend>
+            <div class="field">
+              <input type="radio" id="format-imprimé" name="format">
+              <label for="format-imprimé"><img src="./images/icon-file-print.svg" alt="Imprimé">Imprimé</label>
+            </div>
+            <div class="field">
+              <input type="radio" id="format-pdf" name="format">
+              <label for="format-pdf"><img src="./images/icon-file-pdf.svg" alt="PDF">PDF</label>
+            </div>
+            <div class="field">
+              <input type="radio" id="format-epub" name="format">
+              <label for="format-epub"><img src="./images/icon-file-epub.svg" alt="ePUB">ePUB</label>
+            </div>
+         </fieldset>
+
+         <fieldset>
+          <legend>Information de Contact</legend>
+            <div class="field">
+                <label for="first-name">Prénom</label>
+                <input id="first-name" type="text" name="first-name"/>
+                <div id="first-name-required" class="error">Le prénom est requis.</div>
+            </div>
+            <div class="field">
+                <label for="last-name">Nom</label>
+                <input id="last-name" type="text" name="last-name"/>
+                <div id="last-name-required" class="error">Le nom est requis.</div>
+            </div>
+            <div class="field field-large">
+                <label for="email">Adresse de courriel</label>
+                <input id="email" type="email" name="email"/>
+                <div id="email-required" class="error">L'adresse courriel est requise.</div>
+                <div id="email-invalid" class="error">L'adresse courriel est invalide.</div>
+            </div>
+            <div class="field field-large">
+                <label for="telephone">Téléphone</label>
+                <input id="telephone" type="text" name="telephone"/>
+                <div id="telephone-required" class="error">Le numéro de téléphone est requis.</div>
+            </div>
+            </fieldset>
+
+
+
+            <fieldset>
+            <legend>Informations postales</legend>
+            <div class="field field-large">
+                <label for="street-address">Adresse</label>
+                <input id="street-address" type="text" name="street-address"/>
+                <div id="street-address-required" class="error">L'adresse est requise.</div>
+            </div>
+            <div class="field field-large">
+                <label for="pays">Pays</label>
+                <select name="pays" id="pays">
+                    <option value="">- Sélectionnez -</option>
+                    <option value="ca">Canada</option>
+                    <option value="us">États-Unis</option> 
+                    <option value="fr">France</option>
+                </select>
+                <div id="pays-required" class="error">Le pays est requis.</div>
+            </div>
+            <div class="field field-large">
+                <label for="province">Province ou État</label>
+                <select name="province" id="province">
+                    <option value="">- Sélectionnez -</option>
+                    <option value="qc">Québec</option>
+                    <option value="on">Ontario</option>
+                    <option value="bc">Colombie-Britannique</option>
+                </select>
+                <div id="province-required" class="error">La province ou l'État est requis.</div>
+            </div>
+            <div class="field field-large">
+                    <label for="postal-code">Code postal (H1H 1H1)</label>
+                    <input id="postal-code" type="text" name="postal-code"/>
+                    <div id="postal-code-required" class="error">Le code postal est requis.</div>
+            </div>
+            <div class="field">
+                <input type="checkbox" id="subscribe"/>
+                <label for="subscribe">Recevoir des Informations par courriel</label>
+            </div>
+        </fieldset>
+
+        <button type="submit">Commander</button>
+    </form>
+    </body>
+</html>
