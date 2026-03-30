@@ -148,7 +148,7 @@ select {
 input:focus,
 select:focus {
     outline: none;
-    border-color: #007BFF;
+    border-color: #ffb300;
 }
 .formats {
     display: flex;
@@ -167,4 +167,33 @@ select:focus {
     border-radius: 10px;
     cursor: pointer;
     transition:  0.3s;
+}
+.format-card input:checked + label {
+    border-color: #ffb300;
+    background-color: #e6f0ff;
+}
+button {
+    padding: 12px 20px;
+    background-color: #ffb300;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+button:hover {
+    opacity: 0.9;
+}
+.error {
+    display: none;
+    color : red;
+    font-size: 0.8rem;
+}
+.error.visible {
+    display: block;
+}
+.field-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
