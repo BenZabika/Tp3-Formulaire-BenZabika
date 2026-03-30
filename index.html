@@ -5,13 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Commander une brochure gratuite</title>
         <script src="./app.js"></script>
-        <link rel="stylesheet" href="./style.css">
+        <link href="./css/style.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Votre code HTML commence ici -->
-         <form>
+         <form id="form-brochure">
          <fieldset>
-            <legend>Format de la brochure</legend>
+            <legend>
+                <span><img src="./images/icon-format-brochure.svg" alt=""></span>
+                <h2>Format de la brochure</h2>
+            </legend>
             <div class="field">
               <input type="radio" id="format-imprimé" name="format">
               <label for="format-imprimé"><img src="./images/icon-file-print.svg" alt="">Imprimé</label>
@@ -27,7 +30,10 @@
          </fieldset>
 
          <fieldset>
-          <legend>Information de Contact</legend>
+          <legend>
+            <span><img src="./images/icon-contact.svg" alt=""></span>
+            <h2>Information de Contact</h2>
+        </legend>
             <div class="field">
                 <label for="first-name">Prénom</label>
                 <input id="first-name" type="text" name="first-name"/>
@@ -54,7 +60,10 @@
 
 
             <fieldset>
-            <legend>Informations postales</legend>
+            <legend>
+                <span><img src="./images/icon-postal.svg" alt=""></span>
+                <h2>Informations postales</h2>
+            </legend>
             <div class="field field-large">
                 <label for="street-address">Adresse</label>
                 <input id="street-address" type="text" name="street-address"/>
@@ -91,7 +100,8 @@
             </div>
         </fieldset>
 
-        <button type="submit">Commander maintenant</button>
+        <button type="submit">Commander </button>
+
     </form>
     </body>
 </html>
