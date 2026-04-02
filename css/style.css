@@ -170,7 +170,7 @@ select:focus {
 }
 .format-card input:checked + label {
     border-color: #ffb300;
-    background-color: #e6f0ff;
+    background-color: #ffdc8b;
 }
 button {
     padding: 12px 20px;
